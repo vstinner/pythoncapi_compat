@@ -19,7 +19,7 @@ jobs:
         # See "allow-prereleases: true" below.
         os: [ubuntu-latest]
         # Use the Fedora container to get more Python versions
-        container: fedora:latest
+        container: "fedora:latest"
         python:
           # Python versions (CPython):
           # https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json
