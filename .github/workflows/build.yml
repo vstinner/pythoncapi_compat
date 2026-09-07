@@ -17,7 +17,10 @@ jobs:
         # Allow Python pre-releases:
         # https://github.com/actions/setup-python/blob/main/docs/advanced-usage.md#allow-pre-releases
         # See "allow-prereleases: true" below.
-        os: [fedora:latest]
+        os: [ubuntu-latest]
+        container:
+          # Use the Fedora container to get more Python versions
+          image: fedora:latest
         python:
           # Python versions (CPython):
           # https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json
